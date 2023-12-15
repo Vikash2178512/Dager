@@ -1,0 +1,521 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    min-height: 100vh;
+    min-width: 100%;
+    padding-left: 16vw;
+}
+
+.nav {
+    height: 50vh;
+    width: 12vw;
+    padding-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav img {
+    height: 37px;
+    width: 110px;
+}
+
+.nav .aboutnav h4 {
+    font-weight: 100;
+    margin-bottom: 17px;
+    letter-spacing: 1px;
+    color: #484848;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    gap: 5px;
+}
+
+.nav .aboutnav h4 span {
+    transition: all ease .3s;
+    position: relative;
+    top: -22px;
+
+}
+
+.nav .aboutnav h4:hover span {
+    top: 0px;
+}
+
+.page1 {
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 1vw;
+    padding-right: 1vw;
+}
+
+.page1 .bg {
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 14px;
+    padding-right: 30px;
+}
+
+.page1 .bg span {
+    margin: 0 10px;
+}
+
+.bg h3 {
+    font-weight: 100;
+    color: #979595;
+}
+
+.bg #bg {
+    color: #000;
+    cursor: pointer;
+    transition: all ease 1s;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.bg #bg span {
+    transition: all ease .3s;
+    position: relative;
+    top: -24px;
+}
+
+.bg #bg:hover span {
+    top: 0px;
+}
+
+.page1 .invest {
+    height: 33vh;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.invest h1 {
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 70px;
+    letter-spacing: 3px;
+}
+
+.scroll {
+    height: 70vh;
+    width: 100%;
+    white-space: nowrap;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 20px;
+
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll .box {
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.scroll .box1 {
+    background-image: url(https://assets.website-files.com/62c301a0e88f872b8a121a3e/649167e7d3154796a097d292_interactive%20building%20HQ%202-p-1600.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.scroll .box2 {
+    background-image: url(https://assets.website-files.com/62c301a0e88f872b8a121a3e/648af9006c902afee35875eb_64887af1f18c73a5e075286b_Paris%2520building.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.page2 {
+    padding-top: 10vh;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+}
+
+.page2 .left {
+    height: 100%;
+    width: 50%;
+}
+
+.page2 .left p {
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+.page2 .left button {
+    padding: 19px 37px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 8vh;
+    font-size: 20px;
+    border: 1px solid #000;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+
+.page2 .left button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+button i {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.page2 .right {
+    height: 100%;
+    width: 50%;
+    padding-left: 5vw;
+    display: flex;
+    gap: 6vw;
+}
+
+.page2 .right .info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.info1 h1 {
+    font-size: 70px;
+    font-weight: 100;
+}
+
+.info1 h6 {
+    font-size: 19px;
+    margin-top: 15px;
+    color: #979595;
+}
+
+.page3 {
+    height: 110vh;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.page3 h1 {
+    font-size: 60px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.imgorcnt {
+    height: 100vh;
+    width: 100%;
+    margin-top: 5vh;
+    background-color: #fff;
+    display: flex;
+    gap: 2vw;
+    padding-right: 8vw;
+}
+
+.imgorcnt .left {
+    height: 100vh;
+    width: 75%;
+}
+
+.imgorcnt .left .img {
+    height: 90vh;
+    width: 100%;
+    background-image: url(https://assets.website-files.com/62c301a0e88f872b8a121a3e/649167e7d3154796a097d292_interactive%20building%20HQ%202-p-1600.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.imgorcnt .left .cnt p {
+    font-size: 19px;
+    margin-top: 20px;
+}
+
+.imgorcnt .right {
+    height: 100vh;
+    width: 45%;
+}
+
+.imgorcnt .right h2 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #484848;
+    margin-bottom: 8vw;
+}
+
+.imgorcnt .right h1 {
+    font-size: 60px;
+    letter-spacing: 3px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.imgorcnt .right p {
+    font-size: 19px;
+    color: #686767;
+}
+
+.page4 {
+    height: 100vh;
+    width: 100%;
+    margin-top: 8vw;
+    margin-bottom: 5vw;
+}
+
+.page4 .imgorcnt .left .img {
+    background-image: url(https://assets.website-files.com/62c301a0e88f872b8a121a3e/648af9006c902afee35875eb_64887af1f18c73a5e075286b_Paris%2520building.jpeg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.page5 {
+    height: 60vh;
+    width: 100%;
+    margin-top: 7vw;
+}
+
+.page5 h1 {
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.page5 .content {
+    height: 60vh;
+    width: 100%;
+    padding-right: 5vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+
+}
+
+.content .content1 {
+    padding-top: 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content .content1 h1 {
+    font-size: 80px;
+    font-weight: 600;
+    -webkit-text-stroke: 2px rgb(193, 191, 191);
+    color: transparent;
+}
+
+.content .content1 h2 {
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.content .content1 p {
+    letter-spacing: 1px;
+    color: #828181f5;
+}
+
+.page6 {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+
+}
+
+.page6 .leftcnt {
+    height: 100%;
+    width: 50%;
+}
+
+.page6 .leftcnt h1 {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.page6 .rightvideo {
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+.leftcnt .a {
+    padding-left: 5vw;
+}
+
+.leftcnt p {
+    font-size: 19px;
+}
+
+.rightvideo video {
+    height: 40vh;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.page7 {
+    height: 30vh;
+    width: 100%;
+}
+
+.page7 h1 {
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-left: 5vw;
+}
+
+.page7 button {
+    padding: 17px 28px;
+    font-size: 20px;
+    margin-top: 2vw;
+    letter-spacing: 2px;
+    border: 1px solid #000;
+    margin-left: 27vw;
+    background-color: #000;
+    cursor: pointer;
+    transition: all ease .5s;
+    color: #fff;
+}
+
+.page7 button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.footer {
+    height: 54vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    padding: 0px 17vw;
+    overflow: hidden;
+}
+
+.footer .left {
+    height: 100%;
+    width: 40%;
+    /* background-color:#fff; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer .left img {
+    height: 37px;
+    width: 110px;
+    margin-top: 5vw;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+
+.footer .left img:hover {
+    scale: 1.2;
+}
+
+.footer .left h3 {
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: 1vw;
+    font-weight: 400;
+}
+
+.footer .right {
+    height: 100%;
+    width: 60%;
+    display: flex;
+}
+
+.footer .right .line1 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .right .line2 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .line-a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border: 1px solid rgb(91, 90, 90);
+    padding-left: 20px;
+}
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    height: 24px;
+    gap: 5px;
+    overflow: hidden;
+}
+
+.footer a span {
+    position: relative;
+    top: -22px;
+    transition: all ease .3s;
+}
+
+.footer a:hover span {
+    top: 0px;
+}
+
+.footer sup {
+    font-size: 8px;
+}
+
+.footer #engineering {
+    font-size: 15px;
+    color: #9d9c9c;
+    height: 30vh;
+    padding-top: 20px;
+    padding-left: 20px;
+    border: 1px solid #686767;
+}
+
+.footer .blank {
+    height: 80px;
+}
+
+.footer #last {
+    border: 1px solid #686767;
+    height: 20vh;
+}
